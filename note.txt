@@ -1,0 +1,5 @@
+pip install fastapi uvicorn sqlalchemy pymysql alembic
+
+alembic init myapp
+
+alembic revision -m "Create User Table"
