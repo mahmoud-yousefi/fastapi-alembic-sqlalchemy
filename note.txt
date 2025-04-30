@@ -3,3 +3,17 @@ pip install fastapi uvicorn sqlalchemy pymysql alembic
 alembic init myapp
 
 alembic revision -m "Create User Table"
+
+alembic upgrade head
+
+alembic revision -m "add job_title column" 
+
+ alembic current
+
+ alembic downgrade -1 => roll back
+
+  alembic upgrade +1 => next migration
+
+  alembic downgrade base => remove db
+
+  alembic revision --autogenerate -m "Added Company model"
